@@ -1,0 +1,21 @@
+<div class="color-1">
+        <div class="b-container">
+                <h2 class="cont-h">Contact Us.</h2>
+                <div class="cont-form">
+                    <%= form_with model: @enquiry do |form|%>
+                            <%= form.text_field :name, placeholder: "Your Name Here", class:"cont-input-1"%>
+                        
+                            <%= form.text_field :subject, placeholder: "Subject", class: "cont-input" %><br/>
+
+                            <%= form.email_field :email, placeholder: "example@gamil.com", class: "cont-input-2"  %>
+
+                            <%= form.text_area :description, placeholder:"Type What You Want To Say.", class: "cont-text" %>
+                            
+                            <%= form.submit "Submit", class: "cont-btn"%>
+                    <% end %>
+                </div>
+            <div class="cont-copy">
+                <p class="cont-copy-p">© CodeeFly 2023 | All Rights Reserved</p>
+            </div>
+        </div>
+</div>
