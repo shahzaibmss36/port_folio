@@ -11,22 +11,22 @@
                       <span class="lli-1 <%= 'color-r' if request.original_fullpath == '/'%>">HOME</span>
                     </li>
                   </a>
-                <a href="/post?type=index" class="A-t">
+                <a href="/post?category=designing" class="A-t">
                   <li class="ill-1">
-                      <span class="color-b <%= 'color-v' if request.original_fullpath == '/post?type=index'%>"><i class="bi bi-palette-fill bi-1"></i></span>
-                      <span class="lli-1  <%= 'color-r' if request.original_fullpath == '/post?type=index'%>">DESIGNING</span>
+                      <span class="color-b <%= 'color-v' if request.original_fullpath == '/post?category=designing'%>"><i class="bi bi-palette-fill bi-1"></i></span>
+                      <span class="lli-1  <%= 'color-r' if request.original_fullpath == '/post?category=designing'%>">DESIGNING</span>
                       </li>
                 </a>
-                <a href="/post?type=development" class="A-t">
+                <a href="/post?category=development" class="A-t">
                   <li class="ill-1">
-                    <span class="color-b <%= 'color-v' if request.original_fullpath == '/post?type=development'%>"><i class="bi bi-snow2"></i></span>
-                    <span class="lli-1 <%= 'color-r' if request.original_fullpath == '/post?type=development'%>">DEVELOPMENT</span>
+                    <span class="color-b <%= 'color-v' if request.original_fullpath == '/post?category=development'%>"><i class="bi bi-snow2"></i></span>
+                    <span class="lli-1 <%= 'color-r' if request.original_fullpath == '/post?category=development'%>">DEVELOPMENT</span>
                   </li>
                 </a>
-                <a href="/post?type=mobile" class="A-t">
+                <a href="/post?category=mobile" class="A-t">
                   <li class="ill-1">
-                    <span class="color-b <%= 'color-v' if request.original_fullpath == '/post?type=mobile'%>"><i class="bi bi-phone-fill"></i></span>
-                    <span class="lli-1 <%= 'color-r' if request.original_fullpath == '/post?type=mobile'%>">MOBILE</span>
+                    <span class="color-b <%= 'color-v' if request.original_fullpath == '/post?category=mobile'%>"><i class="bi bi-phone-fill"></i></span>
+                    <span class="lli-1 <%= 'color-r' if request.original_fullpath == '/post?category=mobile'%>">MOBILE</span>
                   </li>
                 </a>
                 <a href="/marketing" class="A-t">
@@ -50,7 +50,7 @@
 <div class="responsive-1">
     <nav class="navbar navbar-expand-lg color">
       <a class="navbar-brand" href="#">S.</a>
-      <button class="navbar-toggler color-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler color-2" category="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -59,14 +59,14 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="/post?type=designing">Designing</a>
+            <a class="nav-link " href="/post?category=designing">Designing</a>
           </li> 
 
           <li class="nav-item">
-            <a class="nav-link" href="/post?type=development">Development</a>
+            <a class="nav-link" href="/post?category=development">Development</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/post?type=mobile">Mobile</a>
+            <a class="nav-link" href="/post?category=mobile">Mobile</a>
           </li>
 
           <li class="nav-item">

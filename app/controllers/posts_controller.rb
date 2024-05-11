@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   def post
+    @posts = Post.where(category: params[:category])
   end
   def home
   end

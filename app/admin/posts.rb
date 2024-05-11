@@ -1,13 +1,13 @@
 ActiveAdmin.register Post do
     
-  permit_params :title , :description, :image, :status
+  permit_params :title , :description, :image, :category
 
     index do
       selectable_column
       id_column
       column :title
       column :description
-      column :status
+      column :category
       column :image
       column :created_at
       actions
@@ -22,7 +22,7 @@ ActiveAdmin.register Post do
       f.inputs do
         f.input :title
         f.input :description
-        f.input :status, :as => :select, :collection =>  post.status
+        f.input :category, :as => :select, :collection =>  post.category
         f.input :image, as: :file
       end
       f.actions
@@ -32,7 +32,7 @@ ActiveAdmin.register Post do
       attributes_table do 
         row :title
         row :description
-        row :status
+        row :category
         row :image do |post|
           if post.image.attached?
             image_tag rails_blob_url(post.image), size: "100*100"
