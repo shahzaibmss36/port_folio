@@ -3,23 +3,25 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-       
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
           <div class="modal-body" id="remote_modal_body" >
-              <div class="modal-box">
-          <div class="modal-img">
-            <%= image_tag (@post.image), class: "modal-img" %>
-          </div>
-          <div class="modal-text">
-            <h1 class="modal-h1"><%= @post.title %></h1>
-            <p class="modal-p"><%= @post.description%></p>
+            <div class="modal-box">
+              <div class="imgs">
+                  <div class="modal-img">
+                    <%= image_tag (@post.image), class: "modal-img" %>
+                  </div>
+              </div>
+                <div class="modal-text">
+                <div class="txts">
+                  <h1 class="modal-h1"><%= @post.title %></h1>
+                  <p class="modal-p"><%= @post.description%></p>
+                </div>
+              </div>
+            </div>  
+            <%= yield %>
           </div>
         </div>
-        
-          <%= yield %>
-        </div>
-      </div>
     </div>
   </div>
 <% end %>
