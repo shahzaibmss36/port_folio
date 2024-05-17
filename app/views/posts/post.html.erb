@@ -1,20 +1,21 @@
 <div class="color-1">
-      <div class="box">
-        <h2 class="h-2">Creative Designing<h2>
-        <h1 class="h-1">Our Creative for the Creative World</h1>
+    <div class="box">
+        <h2 class="h-2">Creative Designing</h2>
+        <h1 class="h-1">Our Creativity for the Creative World</h1>
         <div class="pro-box">
-        <% @posts.each do |post| %>
-            <div class="post">
-                <% if post.image.attached? %>
-                <%= image_tag url_for(post.image), class: "post-img"%>
-            <% end %> 
-                <h3 class="h-3"><%= post.title %></h3>
-                <p class="post-p"><%= post.description %></p>
-            </div>
-            <% end%>
-            
+            <% @posts.each do |post| %>
+                <div class="post">
+                    <% if post.image.attached? %>
+                        <%= image_tag url_for(post.image), class: "post-img" %>
+                    <% end %> 
+                    <h3 class="h-3"><%= post.title %></h3>
+                    <p class="post-p">
+                        <% description_words = post.description.split(' ') %>
+                        <% truncated_description = description_words.take(20).join(' ') %>
+                        <%= truncated_description %>... <%= link_to "Read more", show_post_path(post), data: {turbo_frame: 'modal'}, class: "color-r" %>
+                    </p>
+                </div>
+            <% end %>    
         </div>
-      </div>
+    </div>
 </div>
-
-
