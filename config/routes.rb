@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   get "contact", to: 'posts#contact' 
   get '/posts/:id', to: 'posts#show', as: 'show_post'
   root "posts#home"
+
+  resources :enquiries, only: [:new, :create]
 end

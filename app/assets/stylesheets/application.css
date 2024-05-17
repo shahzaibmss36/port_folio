@@ -12,7 +12,7 @@
   .modal-body {
     display: flex;
     padding: 20px;
-    background-color:#212529;;
+    background-color:black;;
   }
   
   .modal-box {
@@ -50,11 +50,12 @@
 .color-1{
     background: #000000;
     width: 1505px;
-    height: 100%;
+    height: auto;
     margin-left: 330px;
     gap: 0px;
     opacity: 0px;
-    position: fixed;
+    padding-bottom: 30%;
+    position: absolute;
 }
 .container-a{
     width: 100%;
@@ -149,6 +150,13 @@
     --color-f: #A2A2A2;
 
 }
+.color-v {
+    color: #2D9352; 
+  }
+  
+  .color-r {
+    color: #2D9352; 
+  }
 
 .color-r{
     color: (--color-c);
@@ -170,6 +178,7 @@ button{
     height: 100vw;
     margin-left: 20vw;
 }
+
 .lli-1 {
     width: 4.5vw;
     height: 0.9vw;
@@ -192,11 +201,11 @@ button{
     border-radius: 5px;
     margin-top: 2rem;
     border: 1px solid gray;
-    color: #2D9352;
+    color: gray;
 }
 .bi-1{
     font-size:28px;
-    color: #2D9352;
+    color:#2D9352;
 }
 
 .sidebar-container{
@@ -393,11 +402,11 @@ button{
     border: 1px solid grey;
 }
 .cont-h {
-    margin-top: 50px;
-    font-size: 30px;
+    margin-top: 100px;
+    font-size: 40px;
     font-weight: 600;
     line-height: -1px;
-    margin-left: 400px;
+    margin-left: 550px;
     color: white;
 }
 .cont-input{
@@ -521,6 +530,58 @@ button{
 }
 
 @media  screen and (max-width: 425px){
+    body {  
+
+        font-family: Arial, sans-serif;
+      }
+      
+      .navbar {
+        background-color: #343a40; 
+      }
+      
+      .navbar-brand {
+        color: #ffffff;
+        font-size: 1.5rem;
+      }
+      
+      .navbar-toggler {
+        border: none;
+      }
+      
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+      
+      .navbar-nav .nav-link {
+        color: #ffffff; 
+      }
+      
+      .navbar-nav .nav-link:hover {
+        color: #d4d4d4; 
+      }
+      
+      .navbar-nav .nav-link.active {
+        color: #ffc107;
+      }
+      
+      @media (max-width: 992px) {
+        .navbar-nav {
+          text-align: center; 
+        }
+      
+        .navbar-nav .nav-item {
+          margin: 0.5rem 0;
+        }
+      }
+      
+      .color {
+        background-color: #343a40; 
+      }
+      
+      .color-2 {
+        border: none; 
+      }
+    
 
     .sidebar-container{
         display: none;
@@ -856,6 +917,60 @@ button{
 
 
 @media  screen and (max-width: 768px) and (min-width: 426px){
+
+    body {  
+
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #343a40; 
+  }
+  
+  .navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-nav .nav-link {
+    color: #ffffff; 
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #d4d4d4; 
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #ffc107;
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-nav {
+      text-align: center; 
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0.5rem 0;
+    }
+  }
+  
+  .color {
+    background-color: #343a40; 
+  }
+  
+  .color-2 {
+    border: none; 
+  }
+  
+  
 
     .sidebar-container{
         display: none;
