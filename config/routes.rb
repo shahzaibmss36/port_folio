@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
   get "post", to: 'posts#post' 
   get "marketing", to: 'posts#marketing' 
-  get "contact", to: 'posts#contact' 
+  get "new", to: 'enquiries#new' 
   get '/posts/:id', to: 'posts#show', as: 'show_post'
   root "posts#home"
 

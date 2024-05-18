@@ -1,6 +1,3 @@
-.modal-content{
-    background-color: #2D9352;
-}   
   .imgs{
     width: 60%;
   }
@@ -561,7 +558,7 @@ button{
       }
       
       .navbar-nav .nav-link.active {
-        color: #ffc107;
+        color: #2D9352;
       }
       
       @media (max-width: 992px) {
@@ -949,7 +946,7 @@ button{
   }
   
   .navbar-nav .nav-link.active {
-    color: #ffc107;
+    color: #2D9352;
   }
   
   @media (max-width: 992px) {
